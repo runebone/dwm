@@ -58,7 +58,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static int nmaster     = 1;    /* number of clients in master area */
 static int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 #define FORCE_VSPLIT 1  /* nrowgrid layout: force two clients to always split vertically */
@@ -209,7 +209,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_Return,	togglescratch,	{.ui = 0} },
 
 	{ MODKEY,			XK_z,		incrgaps,	{.i = +3 } },
-	/* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") }, */
+	{ MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("obsidian") }, // XXX (my modification)
 	{ MODKEY,			XK_x,		incrgaps,	{.i = -3 } },
 	/* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") }, */
 	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
